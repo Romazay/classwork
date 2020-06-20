@@ -1,6 +1,40 @@
-body{
-    background-color: gray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    background-color: yellow;
+body {
+  background-color: gray;
+}
+h1 {
+  background-color: yellow;
+}
+button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn {
+  width: 250px;
+  margin: 25px auto;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background-color: purple;
+  color: lightblue;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px 0px transparent;
+
+  transition: all 0.2s linear;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  box-shadow: 0px 2px 9px 0px transparent;
+  background-color: rgb(169, 16, 207);
+}
+
+.btn:focus {
+    border-color: white;
 }

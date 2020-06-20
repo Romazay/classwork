@@ -1,0 +1,140 @@
+/* montserrat-regular - latin_cyrillic-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin_cyrillic-ext-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-ext-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic-ext */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-ext-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-ext-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin_cyrillic-ext */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin_cyrillic-ext-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin_cyrillic-ext-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-top {
+  padding-top: 34px;
+  padding-bottom: 260px;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
+    url("../images/header/bg-header.jpg") no-repeat center top;
+  background-size: cover;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 248px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 36px;
+}
+
+.menu {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 0;
+}
+
+.menu__item {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 32px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item-link {
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.header-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.btn {
+  width: 176px;
+  height: 46px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.3s linear all;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #c0301c;
+}
