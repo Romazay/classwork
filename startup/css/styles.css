@@ -65,6 +65,12 @@ body {
   margin: 0 auto;
 }
 
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .header-top {
   padding-top: 34px;
   padding-bottom: 260px;
@@ -74,11 +80,10 @@ body {
   background-size: cover;
 }
 .navigation {
-  display: flex;
-  align-items: center;
   margin-bottom: 248px;
 }
 .logo {
+  float: left;
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
@@ -86,13 +91,13 @@ body {
 }
 
 .menu {
-  display: inline-block;
-  margin-left: auto;
+  float: right;
+  margin-top: 9px;
   font-size: 0;
 }
 
 .menu__item {
-  display: inline-block;
+  float: left;
   font-size: 14px;
   margin-right: 32px;
 }
